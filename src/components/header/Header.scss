@@ -137,7 +137,7 @@
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 486px;
+  max-height: 100vh;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -178,5 +178,19 @@
 @media (max-width: 960px) and (min-width: 768px) {
   .header {
     font-size: 12px;
+  }
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+  .header {
+    padding: 10px 12px;
+  }
+  .header .logo {
+    font-size: 1.25em;
+    margin-top: 6px;
+  }
+  .header li a {
+    padding: 14px 16px;
   }
 }
