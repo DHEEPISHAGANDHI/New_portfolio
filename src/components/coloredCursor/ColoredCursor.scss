@@ -1,0 +1,89 @@
+.cursor {
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  left: -100px;
+  top: -100px;
+  z-index: 9999;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  /* dark purple core with subtle white sheen */
+  background: radial-gradient(circle at 35% 30%, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.0) 28%), linear-gradient(135deg, #4b0082, #8a2be2);
+  /* intensified purple glow for strong brightness */
+  box-shadow: 0 28px 80px rgba(138,43,226,0.55), 0 0 180px rgba(138,43,226,0.44), 0 0 320px rgba(75,0,130,0.28);
+  transition: transform 120ms ease, box-shadow 160ms ease, width 120ms ease, height 120ms ease, filter 120ms ease;
+}
+
+.cursor.hover {
+  transform: translate(-50%, -50%) scale(2.6);
+  box-shadow: 0 44px 140px rgba(138,43,226,0.72), 0 0 260px rgba(138,43,226,0.58), 0 0 420px rgba(75,0,130,0.36);
+  filter: brightness(1.12) saturate(1.2);
+}
+
+/* Hide native cursor on devices that support hover */
+@media (hover: hover) and (pointer: fine) {
+  body {
+    cursor: none;
+  }
+}
+
+/* Don't apply custom cursor on touch devices */
+@media (hover: none) {
+  .cursor-dot,
+  .cursor-ring {
+    display: none;
+  }
+  body {
+    cursor: auto;
+  }
+}
+
+/* spark particles that appear around the cursor */
+.cursor-spark {
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  z-index: 9998;
+  background: radial-gradient(circle at 30% 30%, #ffffff, #b79bff 30%, #8a2be2 65%);
+  filter: blur(6px);
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  animation: sparkAnim 700ms cubic-bezier(.2,.8,.2,1) forwards;
+}
+
+@keyframes sparkAnim {
+  to {
+    opacity: 0;
+    transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(0.25);
+    filter: blur(12px);
+  }
+}
+
+/* extra large blurred glow layer to make the aura obvious */
+.cursor::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+  background: radial-gradient(circle at 50% 40%, rgba(186,104,200,0.35), rgba(138,43,226,0.22) 40%, rgba(75,0,130,0.08) 70%, transparent 75%);
+  filter: blur(26px);
+  opacity: 0.95;
+  transition: width 140ms ease, height 140ms ease, filter 200ms ease, opacity 120ms ease;
+}
+
+.cursor.hover::after {
+  width: 320px;
+  height: 320px;
+  filter: blur(36px);
+  opacity: 1;
+}
+

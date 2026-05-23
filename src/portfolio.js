@@ -207,19 +207,19 @@ const bigProjects = {
     {
       image: require("./assets/images/car1.webp"),
       projectName: "Car Rental System",
-      projectDesc: "A car rental system that allows users to rent cars online. It provides features such as car selection, booking, payment processing, and user authentication.",
+      projectDesc: "Built a secure car rental system with optimized database design and responsive UI, improving booking efficiency and enabling smooth real-time data handling through structured workflows and input validation.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://github.com/DHEEPISHAGANDHI/car_rental"
+          url: "https://car-rental-system-1-4yed.onrender.com/"
         }
         //  you can add extra buttons here.
       ]
     }, 
     {
       image: require("./assets/images/aibot.jpeg"),
-      projectName: "LegalAI Bot",
-      projectDesc: "An AI-powered legal assistant bot that helps users with legal queries and document generation. It utilizes natural language processing and multilingual capabilities.",
+      projectName: "Legal AI Assistant",
+      projectDesc: "Developed an AI-powered legal assistant using RAG to deliver context-aware legal insights. Optimized query retrieval and integrated secure backend APIs to enhance system performance and reliability.",
       footerLink: [
         {
           name: "Visit Website",
@@ -234,7 +234,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://github.com/DHEEPISHAGANDHI/ai_news_curator"
+          url: "https://drive.google.com/drive/folders/1XSXa81fx8SgkQB9KUGLp34Y5FRAJvsLz"
         }
         //  you can add extra buttons here.
       ]
@@ -247,31 +247,31 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://github.com/DHEEPISHAGANDHI/TNEB_PROJECT"
+          url: "https://drive.google.com/drive/folders/1XI5hG-1o7w2ctHzXCQNkjIKx_yE4aR0y"
         }
         //  you can add extra buttons here.
       ]
     },
      {
       image: require("./assets/images/ainews.png"),
-      projectName: "AI News Curator",
-      projectDesc: "A news curator that uses AI to gather and summarize news articles from various sources, providing users with concise and relevant news updates.",
+      projectName: "News Curator Platform",
+      projectDesc: "Developed a full-stack news aggregation platform integrating external APIs to filter and deliver personalized content, improving user engagement through dynamic search and modular UI components.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://github.com/DHEEPISHAGANDHI/ai_news_curator"
+          url: "https://ai-news-curator-1.onrender.com/"
         }
         //  you can add extra buttons here.
       ]
     },
-     {
-      image: require("./assets/images/tneb.jpeg"),
-      projectName: "TNEB Project",
-      projectDesc: "A project related to Tamil Nadu Electricity Board (TNEB) that involves complaint management and resolution with role-based access control.",
+    {
+      image: require("./assets/images/sekar.png"),
+      projectName: "Furniture E-Commerce Platform",
+      projectDesc: "Developed and deployed a full-stack furniture e-commerce platform for a real client with responsive UI, dynamic product management, authentication, and admin dashboard functionalities.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://github.com/DHEEPISHAGANDHI/TNEB_PROJECT"
+          url: "https://sekar-industries-3.onrender.com/"
         }
         //  you can add extra buttons here.
       ]
@@ -384,7 +384,6 @@ const certificationSection = {
       image: require("./assets/images/pwaLogo.webp"),
       imageAlt: "PWA Logo",
       footerLink: [
-        {name: "Certification", url: ""},
         {
           name: "View Certificate",
           url: "https://drive.google.com/file/d/1AhC97RZxaiQt7C37ePtOtJWRCrFQqeyE/view?usp=drive_link"
@@ -397,10 +396,22 @@ const certificationSection = {
       image: require("./assets/images/pwaLogo.webp"),
       imageAlt: "PWA Logo",
       footerLink: [
-        {name: "Certification", url: ""},
         {
           name: "View Certificate",
           url: "https://drive.google.com/file/d/1wUEJmS8wVabTTZzLzfQInG6sVmbS0Rd-/view?usp=drive_link"
+        }
+      ]
+    }
+    ,
+    {
+      title: "Oracle Certified Professional: Java SE 17 Developer",
+      subtitle: "Completed the Oracle Certified Professional: Java SE 17 Developer under Oracle",
+      image: require("./assets/images/pwaLogo.webp"),
+      imageAlt: "Oracle Java Certification",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://drive.google.com/file/d/197ifzVAU_mSujSRwSDAm7KCE4knINi1T/view?usp=drivesdk"
         }
       ]
     }
