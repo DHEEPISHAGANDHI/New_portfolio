@@ -40,6 +40,13 @@
 }
 
 /* spark particles that appear around the cursor */
+.cursor-spark-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9998;
+}
+
 .cursor-spark {
   position: fixed;
   pointer-events: none;
